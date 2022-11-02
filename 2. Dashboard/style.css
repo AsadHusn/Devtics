@@ -1,0 +1,33 @@
+
+.one{
+    background-image: url("sidebar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one .nav-link{
+    color: white;
+}
+
+.one .logo{
+    width: 60px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.one li hr{
+    height: 4px;
+    background-color: white;
+}
+
+.one .logoarea{
+    display: flex;
+    justify-content: center;
+    /* margin: 30px; */
+    align-items: center;
+    margin-left: 10px;
+}
+
+.two{
+    height: 100vh;
+}

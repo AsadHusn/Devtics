@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form{
+            font-family: 'Gill Sans MT';
+            margin: 5% auto;
+            width: 400px;
+            font-size: larger;
+            box-shadow: 0 1px 2px;
+            padding: 1% 2% 2%;
+        }
+        form input, select{
+            display: block;
+            font-size: inherit;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 1% 0 2%;
+        }
+        form button{
+            font-size: inherit;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+        }
+        form button#submit{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Register</h1>
+        <div id="content">
+            <section class="tab" style="display: block;">
+                
+                <label for="username">Name: </label>
+                <input type="text" name="username" id="username" placeholder="Full Name">   
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" placeholder="City">
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone">
+                
+                
+            </section>
+            <section class="tab" style="display: none;">
+                <label for="date">Date of Birth:</label>
+                <input type="date" name="date" id="date">
+                
+                <label for="job">Profession:</label>
+                <select name="job" id="job">
+                    <option selected disabled>Select</option>
+                    <option name="employed">Employed</option>
+                    <option name="unemployed">Unmployed</option>
+                    <option name="student">Student</option>
+                </select>
+                
+                <br>
+                <button type="submit" id="submit">Submit</button>
+                <br>
+            </section>
+            <br>
+            <button type="button" id="next">Next</button>
+            <br>
+        </div>
+        <hr>
+        <div id="demo" style="display: block;">
+            Name: <span id="username2"></span><br>
+            Email: <span id="email2"></span><br>
+            City: <span id="city2"></span><br>
+            Phone: <span id="phone2"></span><br>
+            Date of Birth: <span id="date2"></span><br>
+            Profession: <span id="job2"></span><br>
+        </div>
+    </form>
+    
+    <script>
+       
+        // event listeners
+        document.getElementById('username').onchange = function(){
+            localStorage.username = username.value
+            update()
+        }
+        document.getElementById('email').onchange = function(){
+            localStorage.email = email.value
+            update()
+        }
+        document.getElementById('city').onchange = function(){
+            localStorage.city = city.value
+            update()
+        }
+        document.getElementById('phone').onchange = function(){
+            localStorage.phone = phone.value
+            update()
+        }
+        document.getElementById('date').onchange = function(){
+            localStorage.date = date.value
+            update()
+        }
+        document.getElementById('job').onchange = function(){
+            localStorage.job = job.value
+            update()
+        }
+
+        
+        function update(){
+            if(localStorage.username)
+            document.getElementById('username2').innerText = localStorage.username
+            
+            if(localStorage.email)
+            document.getElementById('email2').innerText = localStorage.email
+            
+            if(localStorage.city)
+            document.getElementById('city2').innerText = localStorage.city
+            
+            if(localStorage.city)
+            document.getElementById('phone2').innerText = localStorage.phone
+            
+            if(localStorage.city)
+            document.getElementById('date2').innerText = localStorage.date
+            
+            if(localStorage.city)
+            document.getElementById('job2').innerText = localStorage.job
+        }
+        update()
+        
+        //  next prev button
+        document.getElementById('next').addEventListener('click', function(){
+            x = document.getElementsByClassName('tab')
+            if(x[0].style.display == 'block'){
+                x[0].style.display = 'none'
+                x[1].style.display= 'block'
+                this.innerText = 'Previous'
+            }else{
+                x[0].style.display = 'block'
+                x[1].style.display='none'
+                this.innerText = 'Next'
+            }
+        })
+        
+    </script>
+    
+</body>
+</html>

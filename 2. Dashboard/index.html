@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="row">
+        <!-- column one -->
+        <div class="col-2 one" id="demo">
+            <div class="navbar navbar-collapse-lg justify-content-center">
+                
+                <ul class="navbar-nav">
+                    <!-- navbar items -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link logoarea navbar-brand">
+                            <div class="logo bg-white"><img src="vue-logo.PNG" width="100%"></div>
+                            <span class="mx-3">LEU LBD</span>
+                        </a>
+                    </li>
+                    <!-- divider -->
+                    <li class="nav-item">
+                        <hr>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded bg-secondary">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-clapperboard"></i>
+                            <span class="mx-0 text-light h6">DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-user"></i>
+                            <span class="mx-2 text-light h6">USER PROFILE</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-table-list"></i>
+                            <span class="mx-2 text-light h6">TABLE LIST</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span class="mx-2 text-light h6">TYPOGRAPHY</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-icons"></i>
+                            <span class="mx-2 text-light h6">ICONS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-map"></i>
+                            <span class="mx-2 text-light h6">MAPS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item h4 p-2 rounded">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="mx-2 text-light h6">NOTIFICATION</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <!-- main column two -->
+        <div class="col bg-light gx-0">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-md bg-white px-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item h6">
+                                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-palette"></i></a>
+                            </li>
+                            <li class="nav-item dropdown h6">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell-slash"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Notification one</a></li>
+                                    <li><a class="dropdown-item" href="#">Another notification</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item h6">
+                                
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Account</a>
+                            </li>
+                            
+                            <!-- dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+            
+            <!-- main page -->
+            <!-- row 1 -->
+            <div class="row m-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <!-- column 1 -->
+                <div class="col">
+                    <!-- card one -->
+                    <div class="card">
+                        <div class="card-body row">
+                            <div class="col text-center">
+                                <i class="fa fa-chart-pie display-3 text-warning"></i>
+                            </div>
+                            <div class="col text-end">
+                                <small class="text-muted">Capacity</small>
+                                <h4>105GB</h4> 
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <p class="text-muted mx-3">
+                            <i class="fa-solid fa-arrows-rotate"></i> Updated now
+                        </p>
+                    </div>
+                </div>
+                <!-- col 2 -->
+                <div class="col">
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="card-body row">
+                            <div class="col text-center">
+                                <i class="fa fa-bolt-lightning display-3 text-success"></i>
+                            </div>
+                            <div class="col text-end">
+                                <small class="text-muted">Revenue</small>
+                                <h4>$1,350</h4> 
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <p class="text-muted mx-3">
+                            <i class="fa fa-bolt-lightning"></i> Last day
+                        </p>
+                    </div>
+                </div>
+                <!-- col 3 -->
+                <div class="col">
+                    <!-- card 3 -->
+                    <div class="card">
+                        <div class="card-body row">
+                            <div class="col text-center">
+                                <i class="fa fa-bezier-curve display-3 text-danger"></i>
+                            </div>
+                            <div class="col text-end">
+                                <small class="text-muted">Errors</small>
+                                <h4>23</h4> 
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <p class="text-muted mx-3">
+                            <i class="fa fa-clock"></i> Last day
+                        </p>
+                    </div>
+                </div>
+                <!-- col 4 -->
+                <div class="col">
+                    <!-- card 4 -->
+                    <div class="card">
+                        <div class="card-body row">
+                            <div class="col text-center">
+                                <i class="fa fa-heart display-3 text-primary"></i>
+                            </div>
+                            <div class="col text-end">
+                                <small class="text-muted">Followers</small>
+                                <h4>+45</h4> 
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="text-muted mx-3">
+                            <i class="fa-solid fa-arrows-rotate"></i> Updated now
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- row 1 complete -->
+            
+            <!-- row 2 start -->
+            
+            <div class="row m-4">
+                <div class="col-md">
+                    <!-- card 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>User Behaviour</h4>
+                            <span class="small text-muted">24 Hours performance</span>
+                            <!-- <div class="img-fluid"> -->
+                                <img class="img-fluid" src="chart2.PNG">
+                                <!-- </div> -->
+                                <i class="fa fa-circle text-primary"></i> Open
+                                <i class="fa fa-circle text-danger"></i> Click
+                                <i class="fa fa-circle text-warning"></i> Click Second Time
+                            </div>
+                            <hr class="my-1">
+                            <p class="text-muted mx-3">
+                                <i class="fa-solid fa-arrows-rotate"></i> Updated 3 minutes ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <!-- card 2 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Email Statistics</h4>
+                                <span class="small text-muted">Last Compaign  Performance</span>
+                                <div class="img-fluid">
+                                    <img class="my-4 img-fluid" src="pie chart.PNG" width="80%">
+                                </div>
+                                <i class="fa fa-circle text-primary"></i> Open
+                                <i class="fa fa-circle text-danger"></i> Click
+                                <i class="fa fa-circle text-warning"></i> Click Second Time
+                            </div>
+                            <hr class="my-1">
+                            <p class="text-muted mx-3">
+                                <i class="fa-solid fa-arrows-rotate"></i> Updated 3 minutes ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- row 2 complete -->
+                
+                <!-- row 3 start -->
+                
+                <div class="row m-4 row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <!-- card 1 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>2014 Sales</h4>
+                                <span class="small text-muted">All products including Taxes</span>
+                                <div class="img-fluid">
+                                    <img class="img-fluid" src="bar chart.png">
+                                </div>
+                                <i class="fa fa-circle text-primary"></i> Tesla Model S 
+                                <i class="fa fa-circle text-danger"></i> BMW 5 Series
+                            </div>
+                            <hr class="my-1">
+                            <p class="text-muted mx-3">
+                                <i class="fa-solid fa-arrows-rotate"></i> Data information certified
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col">
+                        <!-- card 2 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Tasks</h6>
+                                <h5>Backend Development</h5>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td scope="col">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td scope="col">
+                                                Sign contract for "What are conference organizers afraid of?
+                                            </td>
+                                            <td scope="col">
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td scope="col">
+                                                Lines From Great Russian Literature? Or E-mails From My Boss?
+                                            </td>
+                                            <td >
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        
+                                        <!-- <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr> -->
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Create 4 Invisible User Experiences you Never Knew About
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Read "Following makes Medium better"
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Unfollow 5 enemies from twitter
+                                            </td>
+                                            <td scope="col">
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-simple">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                            
+                            <!-- <hr class="my-1"> -->
+                            <p class="text-muted mx-3">
+                                <i class="fa-solid fa-arrows-rotate"></i> Updated 3 minutes ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- row 3 complete -->
+                
+            </div>
+            <!-- main column two complete -->
+            
+        </div>
+        
+    </body>
+    </html>
