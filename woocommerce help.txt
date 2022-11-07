@@ -1,0 +1,27 @@
+wc_get_cart_url()
+
+WC()->cart->get_cart()
+
+/ Meta data.
+
+wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
+
+WC()->cart->get_product_price( $_product )
+
+wc_coupons_enabled()
+
+wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' );
+
+wc_get_checkout_url()
+
+
+get_current_user_id()
+get_user_meta( int $user_id )
+wp_get_current_user()
+
+
+delete_user_meta( $user_id, $meta_key, $meta_value );
+get_user_meta()
+add_user_meta()
+
+get_post_meta()
